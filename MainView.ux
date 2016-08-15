@@ -1,4 +1,5 @@
 <App>
+  <Text ux:Class="BigHeader" FontSize="60" />
   <DockPanel>
     <JavaScript>
       var Observable = require('FuseJS/Observable');
@@ -18,7 +19,7 @@
     <StatusBarBackground Dock="Top" />
     <ScrollView ClipToBounds="true">
       <StackPanel>
-        <Text FontSize="30">Hello, world!</Text>
+        <BigHeader>Hello, world!</BigHeader>
         <Slider />
         <Button Text="{buttonText}" Clicked="{onClick}" />
         <Switch Alignment="Left" />
